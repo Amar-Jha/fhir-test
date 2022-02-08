@@ -98,7 +98,7 @@
         function FHIRCallback(data) {
             patientListHtml = '<ol>';
             data.entry.forEach(function(e) {
-                patientListHtml += '<li>' + e.resource.name[0].family + ', ' + e.resource.name[0].given + ' , ' + e.resource.gender + ' , ' + e.resource.birthDate';
+                patientListHtml += '<li>' + e.resource.name[0].family + ', ' + e.resource.name[0].given + ' , ' + e.resource.gender + ' , ' + e.resource.birthDate;
             });
             patientListHtml += '</ol>';
             document.getElementById("patientTable").innerHTML = patientListHtml;
